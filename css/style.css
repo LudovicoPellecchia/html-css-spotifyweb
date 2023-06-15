@@ -34,7 +34,7 @@ html{
 
 .left-navbar{
     color: var(--idle-text-color);
-    padding: 25px;
+    padding: 25px 25px 10px 25px;
     background-color: black;
     overflow: auto;
     flex-shrink: 0;
@@ -107,18 +107,39 @@ html{
 }
 
 
-.left-navbar-profile .download-app-btn::after{
+/* .left-navbar-profile .download-app-btn::after{
     content: "";
     display: block;
     width: 100%;
     height: var(--bottom-spacing-left-navbar);
     border-bottom: 1px solid var(--idle-text-color);
+} */
+
+.left-navbar-profile hr{
+    margin: 10px 0;
+    border-color: var(--idle-text-color);
 }
 
-.left-navbar-profile i{
-    filter:invert();
+.left-navbar-profile .download-app-btn{
+    display: flex;
+}
+
+.left-navbar-profile .download-app-btn svg{
+    width: 30px;
+    color: var(--idle-text-color);
     display: inline-block;
     padding-right: 10px;
+}
+
+.left-navbar-profile .profile-name svg{
+    margin-right: 10px;
+    width: 30px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    background-color: var(--idle-text-color);
+    font-size: 30px;
 }
 
 .left-navbar-profile .profile-name{
@@ -128,10 +149,7 @@ html{
     padding-top: var(--bottom-spacing-left-navbar);
 }
 
-.left-navbar-profile .profile-name i{
-    font-size: 30px;
-    color: var(--idle-text-color);
-}
+
 
 
 .upgrade-bar{
@@ -182,3 +200,7 @@ html{
     width: 100%;
 }
 
+.bottom-navbar-content{
+    display: flex;
+    justify-content: space-between;
+}
