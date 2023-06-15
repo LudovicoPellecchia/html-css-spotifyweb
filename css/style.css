@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
-/* * > div{
-    border: 2px solid black;
-} */
+
+html{
+    font-weight: 700;
+    font-family: 'Circular Std', sans-serif;
+                                                
+}
+
+:root{
+    --bottom-spacing-left-navbar:0.8rem;
+    --big-spacing:2rem;
+    --idle-text-color:rgb(143, 142, 142);
+}
 
 .body-container{
     height: 100vh;
@@ -27,19 +36,89 @@
     width: 100%;
 }
 
-
 .left-navbar{
-    padding: 20px;
+    color: var(--idle-text-color);
+    padding: 25px;
     background-color: black;
     overflow: auto;
     flex-shrink: 0;
     width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .left-navbar-content{
     display: flex;
     flex-direction: column;
 }
+
+.left-navbar .sptfy-logo img{
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    padding-bottom: var(--big-spacing);
+}
+
+.left-navbar-links ul > *{
+    padding-bottom: var(--bottom-spacing-left-navbar);
+}
+
+.left-navbar-playlist > *{
+    padding-bottom: var(--bottom-spacing-left-navbar);
+}
+
+
+.left-navbar-links ul{
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-navbar-links ul li{
+    list-style: none;
+}
+
+.left-navbar-links ul li a{
+    color:var(--idle-text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.left-navbar-links li a i{
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-right: 10px;
+}
+
+.left-navbar-links li:hover a {
+    color: white;
+}
+
+
+.left-navbar-playlist .playlist-title{
+    color: white;
+}
+
+.left-navbar-playlist .new-playlist i{
+    margin-right: 10px;
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    background-color: var(--idle-text-color) ;
+}
+
+
+.left-navbar-profile .download-app-btn::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: var(--bottom-spacing-left-navbar);
+    border-bottom: 1px solid var(--idle-text-color);
+}
+
 
 .content-container{
     flex-grow: 1;
@@ -57,3 +136,4 @@
     flex-grow: 1;
     overflow: auto;
 }
+
