@@ -30,11 +30,7 @@ html{
     display: flex;
 }
 
-.bottom-navbar{
-    flex-shrink: 0;
-    height: 100px;
-    width: 100%;
-}
+
 
 .left-navbar{
     color: var(--idle-text-color);
@@ -119,6 +115,45 @@ html{
     border-bottom: 1px solid var(--idle-text-color);
 }
 
+.left-navbar-profile i{
+    filter:invert();
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.left-navbar-profile .profile-name{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: var(--bottom-spacing-left-navbar);
+}
+
+.left-navbar-profile .profile-name i{
+    font-size: 30px;
+    color: var(--idle-text-color);
+}
+
+
+.upgrade-bar{
+    width: 100%;
+    background-color:#080B12 ;
+}
+.upgrade-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    padding: var(--big-spacing) 0;
+}
+
+.upgrade-bar .upgrade-btn{
+    margin-right: 10px;
+    color: white;
+    padding: 0.8rem 3rem;
+    border: 1px solid white;
+    border-radius: 3rem;
+}
+
 
 .content-container{
     flex-grow: 1;
@@ -127,13 +162,23 @@ html{
     flex-direction: column;
 }
 
-.upgrade-bar{
-    flex-shrink: 0;
-    flex-basis: 100px;
-}
+
+
 
 .main-content{
+    background-color: #141922;
     flex-grow: 1;
     overflow: auto;
+}
+
+
+
+
+
+.bottom-navbar{
+    background-color: #282828;
+    flex-shrink: 0;
+    height: 100px;
+    width: 100%;
 }
 
