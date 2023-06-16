@@ -24,7 +24,7 @@ html{
 
 :root{
     --bottom-spacing-left-navbar:1rem;
-    --big-spacing:2rem;
+    --big-spacing:1.6rem;
     --idle-text-color:rgb(129, 127, 127);
     --section-padding:25px 25px 10px 25px;
 
@@ -257,7 +257,7 @@ html{
 }
 .card-title{
     padding: 14px 0 10px 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color:white;
 }
 .card-artist-name{
