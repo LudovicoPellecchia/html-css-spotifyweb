@@ -14,16 +14,13 @@ html{
 
 ::-webkit-scrollbar{
     background: rgba(146, 145, 145, 0.264);
-
 }
-
 ::-webkit-scrollbar-thumb{
     border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(143, 142, 142, 0.5);
+    background-color: rgba(143, 142, 142, 0.727);
 }
-
 
 :root{
     --bottom-spacing-left-navbar:1rem;
@@ -45,7 +42,6 @@ html{
     overflow: auto;
     display: flex;
 }
-
 
 
 .left-navbar{
@@ -72,6 +68,7 @@ html{
     display: block;
     padding-bottom: var(--big-spacing);
 }
+
 
 .left-navbar-links ul > *{
     padding-bottom: var(--bottom-spacing-left-navbar);
@@ -100,7 +97,6 @@ html{
     text-decoration: none;
     display: flex;
     align-items: center;
-
 }
 
 .left-navbar-links li a i{
@@ -110,6 +106,12 @@ html{
 }
 
 .left-navbar-links li:hover a {
+    color: white;
+}
+.left-navbar-playlist .playlist-scroll div:hover{
+    color: white;
+}
+.left-navbar-playlist .new-playlist:hover{
     color: white;
 }
 
@@ -131,20 +133,10 @@ html{
     background-color: var(--idle-text-color) ;
 }
 
-
-
 .left-navbar-playlist .playlist-scroll{
     overflow: auto;
 }
 
-
-/* .left-navbar-profile .download-app-btn::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: var(--bottom-spacing-left-navbar);
-    border-bottom: 1px solid var(--idle-text-color);
-} */
 
 .left-navbar-profile hr{
     border-color: var(--idle-text-color);
@@ -181,8 +173,6 @@ html{
 }
 
 
-
-
 .upgrade-bar{
     width: 100%;
     background-color:#080B12 ;
@@ -203,7 +193,6 @@ html{
     border-radius: 3rem;
 }
 
-
 .content-container{
     flex-grow: 1;
     overflow: auto;
@@ -213,14 +202,11 @@ html{
 
 
 
-
-
 .main-content{
     background-color: #141922;
     flex-grow: 1;
     overflow: auto;
     padding:var(--section-padding);
-
 }
 
 .main-content-sct-bar{
@@ -242,7 +228,7 @@ html{
 }
 
 .main-content-sct-title{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: white;
 }
 
@@ -284,10 +270,22 @@ html{
     padding-top: var(--big-spacing);
 }
 .main-content-custom h2{
-    padding-bottom: var(--bottom-spacing-left-navbar) ;
+    padding-bottom: 0.7rem ;
 }
-.main-content-custom h5{
+.main-content h5{
     padding-bottom: var(--big-spacing);
+}
+
+.main-content-suggestions{
+    padding-top: var(--big-spacing);
+}
+.main-content-suggestions h2{ 
+    padding-bottom: 0.7rem ;
+}
+
+.main-content-suggestions img{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
 
 
