@@ -11,6 +11,19 @@ html{
                                                 
 }
 
+::-webkit-scrollbar{
+    background: rgba(113, 113, 113, 0.264);
+
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(143, 142, 142, 0.5);
+}
+
+
 :root{
     --bottom-spacing-left-navbar:0.8rem;
     --big-spacing:2rem;
@@ -47,6 +60,7 @@ html{
 .left-navbar-content{
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .left-navbar .sptfy-logo img{
@@ -64,6 +78,9 @@ html{
     padding-bottom: var(--bottom-spacing-left-navbar);
 }
 
+.left-navbar-playlist .playlist-scroll > div{
+    padding-bottom: var(--bottom-spacing-left-navbar);
+}
 
 .left-navbar-links ul{
     padding-bottom: 1rem;
@@ -94,6 +111,11 @@ html{
 }
 
 
+.left-navbar-playlist{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
 .left-navbar-playlist .playlist-title{
     color: white;
 }
@@ -104,6 +126,12 @@ html{
     color: black;
     padding: 10px;
     background-color: var(--idle-text-color) ;
+}
+
+
+
+.left-navbar-playlist .playlist-scroll{
+    overflow: auto;
 }
 
 
@@ -175,7 +203,7 @@ html{
 
 .content-container{
     flex-grow: 1;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex-direction: column;
 }
