@@ -6,13 +6,14 @@
 
 
 html{
+    color: var(--idle-text-color);
     font-weight: 700;
     font-family: 'Circular Std', sans-serif;
                                                 
 }
 
 ::-webkit-scrollbar{
-    background: rgba(113, 113, 113, 0.264);
+    background: rgba(146, 145, 145, 0.264);
 
 }
 
@@ -25,9 +26,11 @@ html{
 
 
 :root{
-    --bottom-spacing-left-navbar:0.8rem;
+    --bottom-spacing-left-navbar:1rem;
     --big-spacing:2rem;
-    --idle-text-color:rgb(143, 142, 142);
+    --idle-text-color:rgb(129, 127, 127);
+    --section-padding:25px 25px 10px 25px;
+
 }
 
 .body-container{
@@ -46,8 +49,8 @@ html{
 
 
 .left-navbar{
+    padding:var(--section-padding);
     color: var(--idle-text-color);
-    padding: 25px 25px 10px 25px;
     background-color: black;
     overflow: auto;
     flex-shrink: 0;
@@ -144,11 +147,11 @@ html{
 } */
 
 .left-navbar-profile hr{
-    margin: 10px 0;
     border-color: var(--idle-text-color);
 }
 
 .left-navbar-profile .download-app-btn{
+    padding-top: 15px;
     display: flex;
 }
 
@@ -210,14 +213,82 @@ html{
 
 
 
+
+
 .main-content{
     background-color: #141922;
     flex-grow: 1;
     overflow: auto;
+    padding:var(--section-padding);
+
+}
+
+.main-content-sct-bar{
+    color: var(--idle-text-color);
+}
+
+.main-content-sct-bar ul{
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.main-content-sct-bar ul li{
+    list-style: none;
+}
+
+.main-content-recent{
+    padding-top: var(--big-spacing);
+}
+
+.main-content-sct-title{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.main-content-recent .main-content-sct-title{
+    padding-bottom:var(--big-spacing) ;
+}
+
+.row{
+    gap: 20px;
+    display: flex;
+}
+
+.card{
+    max-width: 300px;
+    flex-basis: calc((100% / 6) - 20px) ;
+}
+
+.card-img img{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+}
+
+.card-text{
+    text-align: center;
+}
+.card-title{
+    padding: 14px 0 10px 0;
+    font-size: 1.2rem;
+    color:white;
+}
+.card-artist-name{
+    font-size: 0.8rem;
+    color: var(--idle-text-color);
 }
 
 
-
+.main-content-custom{
+    padding-top: var(--big-spacing);
+}
+.main-content-custom h2{
+    padding-bottom: var(--bottom-spacing-left-navbar) ;
+}
+.main-content-custom h5{
+    padding-bottom: var(--big-spacing);
+}
 
 
 .bottom-navbar{
