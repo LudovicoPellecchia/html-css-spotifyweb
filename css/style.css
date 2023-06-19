@@ -299,6 +299,7 @@ html{
 }
 
 .bottom-navbar-content{
+    gap: 25px;
     display: flex;
     justify-content: space-between;
 }
@@ -310,6 +311,8 @@ html{
 }
 
 .bottom-left-nav img{
+    width: 100%;
+    min-width: 60px;
     padding-right: 20px;
     max-width: 100px;
 }
@@ -394,5 +397,41 @@ html{
 }
 
 .bottom-right-nav .lenght-bar{
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:1100px){
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .main-content-recent .card{
+        
+        flex-basis: calc((100% / 4) - 20px);
+    }
+
+    .main-content-sct-bar ul{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    .main-content-recent .card{
+        
+        flex-basis: calc((100% / 2) - 20px);
+    }
+
+    .bottom-left-nav .preview-song{
+        padding-right: 20px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    
 }
