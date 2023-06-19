@@ -325,7 +325,7 @@ html{
 .bottom-left-nav i{
     font-size: 1.2rem;
     display: inline-block;
-    padding-right: 8px;
+    padding-right: 1rem;
 }
 
 .bottom-center-nav{
@@ -352,6 +352,7 @@ html{
 }
 
 .bottom-center-bottom-player{
+    gap: 20px;
     align-items: center;
     display: flex;
     height: 100%;
@@ -359,9 +360,8 @@ html{
     justify-content: space-between;
 }
 
-.bottom-center-bottom-player .lenght-bar{
+.lenght-bar{
     border-radius: 3px;
-    margin: 0 1rem;
     height: 5px;
     width: 100%;
     display: flex;
@@ -380,6 +380,18 @@ html{
 }
 
 .bottom-right-nav{
+    color: white;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
     flex-basis: 30%;
 }
 
+.bottom-right-nav i{
+    font-size: 1rem;
+    display: inline-block;
+    padding-right: 1rem;}
+
+.bottom-right-nav .lenght-bar{
+    width: 100px;
+}
