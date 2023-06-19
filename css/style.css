@@ -50,7 +50,7 @@ html{
     background-color: black;
     overflow: auto;
     flex-shrink: 0;
-    max-width: 250px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -440,6 +440,7 @@ html{
 
 @media screen and (max-width:600px){
     .left-navbar{
+        width: 60px;
         padding: 6px 15px;
     }
 
