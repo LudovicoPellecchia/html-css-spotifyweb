@@ -50,7 +50,7 @@ html{
     background-color: black;
     overflow: auto;
     flex-shrink: 0;
-    width: 250px;
+    max-width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,13 +62,18 @@ html{
     overflow: auto;
 }
 
-.left-navbar .sptfy-logo img{
+.left-navbar .sptfy-logo .large-logo{
     width: 100%;
     max-width: 150px;
     display: block;
     padding-bottom: var(--big-spacing);
 }
 
+.small-logo{
+    padding-bottom: var(--bottom-spacing-left-navbar);
+    max-height: 3rem;
+    display: none;
+}
 
 .left-navbar-links ul > *{
     padding-bottom: var(--bottom-spacing-left-navbar);
@@ -292,6 +297,7 @@ html{
 
 
 .bottom-navbar{
+    overflow: auto;
     padding: 25px 15px;
     background-color: #282828;
     flex-shrink: 0;
@@ -409,7 +415,7 @@ html{
         flex-wrap: wrap;
     }
 
-    .main-content-recent .card{
+    .main-content .card{
         
         flex-basis: calc((100% / 4) - 20px);
     }
@@ -421,7 +427,7 @@ html{
 
 @media screen and (max-width:700px){
 
-    .main-content-recent .card{
+    .main-content .card{
         
         flex-basis: calc((100% / 2) - 20px);
     }
@@ -433,5 +439,47 @@ html{
 }
 
 @media screen and (max-width:600px){
-    
+    .left-navbar{
+        padding: 6px 15px;
+    }
+
+    .left-navbar .sptfy-logo .large-logo{
+        display: none;
+    }
+
+    .left-navbar-content .small-logo{
+        display: block;
+    }
+
+    .left-navbar-content .left-navbar-links span{
+        display: none;
+    }
+
+    .left-navbar-links ul {
+        align-items: center;
+    }
+
+    .left-navbar-playlist{
+        display: none;
+    }
+
+    .left-navbar-profile span{
+        display: none;
+    }
+
+    .left-navbar-links li a i{
+        padding-right: 0;
+    }
+    .left-navbar-profile .profile-name svg {
+        margin-right: 0;
+    }
+
+    .left-navbar-profile .download-app-btn svg {
+        padding-right: 0;
+    }
+
+
+    .bottom-navbar-content{
+        gap: 5px;
+    }
 }
