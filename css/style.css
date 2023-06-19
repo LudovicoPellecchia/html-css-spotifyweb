@@ -251,10 +251,35 @@ html{
     flex-basis: calc((100% / 6) - 20px) ;
 }
 
+.card-img{
+    position: relative;
+}
+
 .card-img img{
     display: block;
     width: 100%;
     max-width: 300px;
+}
+
+
+.card-img:hover img{
+    transition: opacity 0.5s;
+    opacity: 0.5;
+}
+
+.card-play-btn{
+    opacity: 0;
+    color: white;
+    font-size: 3.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.card-img:hover .card-play-btn{
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 .card-text{
